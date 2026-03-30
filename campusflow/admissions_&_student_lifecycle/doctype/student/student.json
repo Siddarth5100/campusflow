@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "STU-.YYYY.-.####",
+ "creation": "2026-03-27 15:40:05.014461",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "student_name",
+  "date_of_birth",
+  "gender",
+  "program",
+  "address_section_section",
+  "city",
+  "state",
+  "pincode",
+  "section_break_29pc",
+  "address"
+ ],
+ "fields": [
+  {
+   "fieldname": "student_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Student Name",
+   "options": "Admission Application",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "student_name.dob",
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date Of Birth",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "student_name.gender",
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "address_section_section",
+   "fieldtype": "Section Break",
+   "label": "Address Section"
+  },
+  {
+   "fetch_from": "student_name.address",
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fetch_from": "student_name.city",
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fetch_from": "student_name.state",
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fetch_from": "student_name.pincode",
+   "fieldname": "pincode",
+   "fieldtype": "Int",
+   "label": "Pincode"
+  },
+  {
+   "fieldname": "section_break_29pc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "student_name.joinning_grade",
+   "fieldname": "program",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Program"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-30 12:57:50.441320",
+ "modified_by": "Administrator",
+ "module": "Admissions & Student Lifecycle",
+ "name": "Student",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "student_name",
+ "track_changes": 1
+}
