@@ -9,7 +9,8 @@
   "course_name",
   "course_code",
   "program",
-  "description"
+  "description",
+  "course_topic"
  ],
  "fields": [
   {
@@ -35,12 +36,18 @@
    "fieldname": "description",
    "fieldtype": "Small Text",
    "label": "Description"
+  },
+  {
+   "fieldname": "course_topic",
+   "fieldtype": "Table",
+   "label": "Course Topic",
+   "options": "Course Topic"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-30 12:55:51.280846",
+ "modified": "2026-03-31 12:59:39.760363",
  "modified_by": "Administrator",
  "module": "Academics & Attendance",
  "name": "Course",

@@ -5,24 +5,18 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "student",
   "grade",
   "date",
-  "status",
+  "attendance_detail",
   "amended_from"
  ],
  "fields": [
   {
-   "fieldname": "student",
-   "fieldtype": "Link",
-   "label": "Student",
-   "options": "Student"
-  },
-  {
    "fetch_from": "student.program",
    "fieldname": "grade",
-   "fieldtype": "Data",
-   "label": "Grade"
+   "fieldtype": "Link",
+   "label": "Grade",
+   "options": "Program"
   },
   {
    "fieldname": "date",
@@ -30,10 +24,10 @@
    "label": "Date"
   },
   {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "Present\nAbsent"
+   "fieldname": "attendance_detail",
+   "fieldtype": "Table",
+   "label": "Attendance Detail",
+   "options": "Attendance Detail"
   },
   {
    "fieldname": "amended_from",
@@ -50,7 +44,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-03-31 01:38:55.980272",
+ "modified": "2026-03-31 12:49:39.606364",
  "modified_by": "Administrator",
  "module": "Academics & Attendance",
  "name": "Attendance",
