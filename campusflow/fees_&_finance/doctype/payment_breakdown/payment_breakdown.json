@@ -1,23 +1,20 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2026-03-30 13:49:49.783078",
+ "creation": "2026-03-30 17:34:03.163020",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "component_name",
+  "fee_type",
   "amount"
  ],
  "fields": [
   {
-   "default": "School Fee",
-   "fieldname": "component_name",
+   "fieldname": "fee_type",
    "fieldtype": "Select",
-   "in_list_view": 1,
    "label": "Fee Type",
-   "options": "School Fee\nTuition Fee\nLab Fee\nExam Fee\nHostel Fee",
-   "reqd": 1
+   "options": "School Fee\nTuition Fee\nExam Fee\nHostel Fee\nBus Fee"
   },
   {
    "fieldname": "amount",
@@ -29,10 +26,10 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-03-30 23:57:53.722439",
+ "modified": "2026-03-31 00:14:21.706456",
  "modified_by": "Administrator",
  "module": "Fees & Finance",
- "name": "Fee Component",
+ "name": "Payment Breakdown",
  "owner": "Administrator",
  "permissions": [],
  "row_format": "Dynamic",

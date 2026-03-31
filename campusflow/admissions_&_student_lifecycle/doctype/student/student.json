@@ -78,15 +78,16 @@
   {
    "fetch_from": "student_name.joinning_grade",
    "fieldname": "program",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Program"
+   "label": "Program",
+   "options": "Program"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-30 12:57:50.441320",
+ "modified": "2026-03-31 00:31:21.614647",
  "modified_by": "Administrator",
  "module": "Admissions & Student Lifecycle",
  "name": "Student",

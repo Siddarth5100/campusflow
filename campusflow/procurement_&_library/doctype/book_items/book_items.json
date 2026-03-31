@@ -1,38 +1,43 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2026-03-30 13:49:49.783078",
+ "creation": "2026-03-31 02:42:38.339224",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "component_name",
-  "amount"
+  "book_name",
+  "book_code",
+  "quantity"
  ],
  "fields": [
   {
-   "default": "School Fee",
-   "fieldname": "component_name",
-   "fieldtype": "Select",
+   "fieldname": "book_name",
+   "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Fee Type",
-   "options": "School Fee\nTuition Fee\nLab Fee\nExam Fee\nHostel Fee",
+   "label": "Book Name",
    "reqd": 1
   },
   {
-   "fieldname": "amount",
-   "fieldtype": "Currency",
-   "label": "Amount"
+   "fieldname": "book_code",
+   "fieldtype": "Data",
+   "label": "Book Code"
+  },
+  {
+   "default": "1",
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-03-30 23:57:53.722439",
+ "modified": "2026-03-31 02:44:16.030017",
  "modified_by": "Administrator",
- "module": "Fees & Finance",
- "name": "Fee Component",
+ "module": "Procurement & Library",
+ "name": "Book Items",
  "owner": "Administrator",
  "permissions": [],
  "row_format": "Dynamic",

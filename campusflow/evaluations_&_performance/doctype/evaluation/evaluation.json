@@ -1,46 +1,53 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2026-03-27 18:14:28.824771",
+ "creation": "2026-03-31 03:04:22.209209",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "section_break_rso7",
   "student",
-  "grade",
-  "date",
-  "status",
+  "program",
+  "evaluation_date",
+  "evaluation_criteria",
   "amended_from"
  ],
  "fields": [
   {
+   "fieldname": "section_break_rso7",
+   "fieldtype": "Section Break"
+  },
+  {
    "fieldname": "student",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Student",
-   "options": "Student"
+   "options": "Student",
+   "reqd": 1
   },
   {
-   "fetch_from": "student.program",
-   "fieldname": "grade",
-   "fieldtype": "Data",
-   "label": "Grade"
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "options": "Program"
   },
   {
-   "fieldname": "date",
-   "fieldtype": "Date",
-   "label": "Date"
+   "fieldname": "evaluation_date",
+   "fieldtype": "Datetime",
+   "label": "Evaluation Date"
   },
   {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "Present\nAbsent"
+   "fieldname": "evaluation_criteria",
+   "fieldtype": "Table",
+   "label": "Evaluation Criteria",
+   "options": "Evaluation Criterion"
   },
   {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "Attendance",
+   "options": "Evaluation",
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
@@ -50,10 +57,10 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-03-31 01:38:55.980272",
+ "modified": "2026-03-31 03:08:37.690118",
  "modified_by": "Administrator",
- "module": "Academics & Attendance",
- "name": "Attendance",
+ "module": "Evaluations & Performance",
+ "name": "Evaluation",
  "owner": "Administrator",
  "permissions": [
   {
@@ -70,11 +77,9 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "track_changes": 1
+ "states": []
 }

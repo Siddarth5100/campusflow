@@ -1,28 +1,28 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2026-03-27 18:14:28.824771",
+ "creation": "2026-03-31 02:36:52.315186",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "section_break_mmzd",
   "student",
-  "grade",
   "date",
-  "status",
-  "amended_from"
+  "transaction_type",
+  "book_items"
  ],
  "fields": [
   {
-   "fieldname": "student",
-   "fieldtype": "Link",
-   "label": "Student",
-   "options": "Student"
+   "fieldname": "section_break_mmzd",
+   "fieldtype": "Section Break"
   },
   {
-   "fetch_from": "student.program",
-   "fieldname": "grade",
-   "fieldtype": "Data",
-   "label": "Grade"
+   "fieldname": "student",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Student",
+   "options": "Student",
+   "reqd": 1
   },
   {
    "fieldname": "date",
@@ -30,30 +30,26 @@
    "label": "Date"
   },
   {
-   "fieldname": "status",
+   "fieldname": "transaction_type",
    "fieldtype": "Select",
-   "label": "Status",
-   "options": "Present\nAbsent"
+   "label": "Transaction Type",
+   "options": "Issue\nReturn"
   },
   {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Attendance",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
+   "fieldname": "book_items",
+   "fieldtype": "Table",
+   "label": "Book Items",
+   "options": "Book Items"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-03-31 01:38:55.980272",
+ "modified": "2026-03-31 02:43:04.918238",
  "modified_by": "Administrator",
- "module": "Academics & Attendance",
- "name": "Attendance",
+ "module": "Procurement & Library",
+ "name": "Library Transaction",
  "owner": "Administrator",
  "permissions": [
   {
@@ -70,11 +66,9 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "track_changes": 1
+ "states": []
 }
