@@ -6,7 +6,10 @@
  "engine": "InnoDB",
  "field_order": [
   "student_name",
-  "payment_date"
+  "grade",
+  "payment_date",
+  "payment_breakdown",
+  "amended_from"
  ],
  "fields": [
   {
@@ -19,13 +22,36 @@
    "fieldname": "payment_date",
    "fieldtype": "Date",
    "label": "Payment Date"
+  },
+  {
+   "fieldname": "payment_breakdown",
+   "fieldtype": "Table",
+   "label": "Payment Breakdown",
+   "options": "Payment Breakdown"
+  },
+  {
+   "fetch_from": "student_name.program",
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "label": "Grade",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Fee Payment",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-03-31 02:05:36.505324",
+ "modified": "2026-03-31 13:12:48.242678",
  "modified_by": "Administrator",
  "module": "Fees & Finance",
  "name": "Fee Payment",

@@ -1,43 +1,39 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2026-03-31 03:06:21.552870",
+ "autoname": "field:topic_name",
+ "creation": "2026-03-31 12:42:40.297644",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "topic_name",
-  "score",
-  "remarks"
+  "description"
  ],
  "fields": [
   {
-   "fieldname": "score",
-   "fieldtype": "Int",
-   "label": "Score"
-  },
-  {
-   "fieldname": "remarks",
-   "fieldtype": "Small Text",
-   "label": "Remarks"
-  },
-  {
    "fieldname": "topic_name",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Topic Name",
-   "options": "Course Topic",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-03-31 13:44:11.109812",
+ "modified": "2026-03-31 13:33:25.420009",
  "modified_by": "Administrator",
- "module": "Evaluations & Performance",
- "name": "Evaluation Criterion",
+ "module": "Academics & Attendance",
+ "name": "Course Topic",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [],
  "row_format": "Dynamic",

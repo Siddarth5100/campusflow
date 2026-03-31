@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "CAMP-.AS-.###",
  "creation": "2026-03-31 02:52:32.775448",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -41,10 +42,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-31 02:55:02.420798",
+ "modified": "2026-03-31 13:24:38.074689",
  "modified_by": "Administrator",
  "module": "Campus Assets & Maintenance",
  "name": "Campus Asset",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -62,7 +64,9 @@
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "asset_name"
 }
