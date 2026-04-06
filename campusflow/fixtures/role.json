@@ -1,0 +1,80 @@
+[
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Role",
+  "home_page": null,
+  "is_custom": 0,
+  "modified": "2026-03-30 14:32:25.509895",
+  "name": "Principal",
+  "restrict_to_domain": null,
+  "role_name": "Principal",
+  "two_factor_auth": 0
+ },
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Role",
+  "home_page": null,
+  "is_custom": 0,
+  "modified": "2026-03-30 14:36:15.584172",
+  "name": "Staff",
+  "restrict_to_domain": null,
+  "role_name": "Staff",
+  "two_factor_auth": 0
+ },
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Role",
+  "home_page": null,
+  "is_custom": 0,
+  "modified": "2026-03-30 14:36:41.181878",
+  "name": "Student",
+  "restrict_to_domain": null,
+  "role_name": "Student",
+  "two_factor_auth": 0
+ },
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Role",
+  "home_page": null,
+  "is_custom": 0,
+  "modified": "2026-03-30 14:36:48.484940",
+  "name": "Parent",
+  "restrict_to_domain": null,
+  "role_name": "Parent",
+  "two_factor_auth": 0
+ },
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Role",
+  "home_page": null,
+  "is_custom": 0,
+  "modified": "2026-03-30 15:11:39.904451",
+  "name": "Librarian",
+  "restrict_to_domain": null,
+  "role_name": "Librarian",
+  "two_factor_auth": 0
+ },
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Role",
+  "home_page": null,
+  "is_custom": 0,
+  "modified": "2026-03-31 11:27:32.241948",
+  "name": "Admin",
+  "restrict_to_domain": null,
+  "role_name": "Admin",
+  "two_factor_auth": 0
+ }
+]
