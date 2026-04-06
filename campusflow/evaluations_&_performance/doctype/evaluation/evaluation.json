@@ -34,7 +34,7 @@
   },
   {
    "fieldname": "evaluation_date",
-   "fieldtype": "Datetime",
+   "fieldtype": "Date",
    "label": "Evaluation Date"
   },
   {
@@ -58,7 +58,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-03-31 15:48:57.640892",
+ "modified": "2026-04-02 23:50:06.974464",
  "modified_by": "Administrator",
  "module": "Evaluations & Performance",
  "name": "Evaluation",
