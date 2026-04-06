@@ -7,9 +7,11 @@
  "field_order": [
   "section_break_mmzd",
   "student",
-  "date",
   "transaction_type",
-  "book_items"
+  "issue_date",
+  "return_date",
+  "book_items",
+  "amended_from"
  ],
  "fields": [
   {
@@ -25,11 +27,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "date",
-   "fieldtype": "Date",
-   "label": "Date"
-  },
-  {
    "fieldname": "transaction_type",
    "fieldtype": "Select",
    "label": "Transaction Type",
@@ -40,13 +37,33 @@
    "fieldtype": "Table",
    "label": "Book Items",
    "options": "Book Items"
+  },
+  {
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "label": "Issue Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Library Transaction",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "return_date",
+   "fieldtype": "Date",
+   "label": "Return Date"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-03-31 02:43:04.918238",
+ "modified": "2026-04-02 17:52:36.987440",
  "modified_by": "Administrator",
  "module": "Procurement & Library",
  "name": "Library Transaction",
