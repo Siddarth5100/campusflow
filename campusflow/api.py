@@ -30,4 +30,14 @@ def get_admission_status():
 # fetch fee structure
 @frappe.whitelist()
 def get_fee_structure_details(name):
-    pass
+    fee_structure = frappe.get_doc("Fee Structure", name)
+
+    fees = []
+
+    for fee in fee_structure.fee_component:
+        fees.append({
+            "component_name": fee.component_name,
+            "amount": fee.amount
+        })
+
+    return fees
