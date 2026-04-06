@@ -8,6 +8,24 @@ app_license = "mit"
 # Apps
 # ------------------
 
+fixtures = [
+	{
+		"doctype": "Role",
+		"filters": [
+			["name", "in", ["Admin", "Librarian", "Principal", "Staff", "Student", "Parent"]]
+		]
+	},
+	
+	{
+		"doctype": "Workflow"
+	},
+	
+	{
+		"doctype": "Email Template"
+	}
+]
+
+
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
