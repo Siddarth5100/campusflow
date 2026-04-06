@@ -12,7 +12,7 @@
   "dob",
   "educational_details_section",
   "past_school_name",
-  "joinning_grade",
+  "joining_grade",
   "column_break_iza3",
   "last_grade",
   "overall_percentage",
@@ -21,8 +21,9 @@
   "parent_details_section",
   "father_name",
   "mother_name",
-  "father_email",
+  "email",
   "sibilings",
+  "sibiling_name",
   "father_occupation",
   "annual_income",
   "column_break_m4gf",
@@ -62,6 +63,7 @@
    "label": "Address Details"
   },
   {
+   "depends_on": "eval:doc.admission_type==\"Boarder\"",
    "fieldname": "guardian_details_section",
    "fieldtype": "Section Break",
    "label": "Guardian Details"
@@ -126,11 +128,7 @@
    "label": "Mother Number"
   },
   {
-   "fieldname": "father_email",
-   "fieldtype": "Data",
-   "label": "Father Email"
-  },
-  {
+   "default": "No",
    "fieldname": "sibilings",
    "fieldtype": "Select",
    "label": "Sibilings",
@@ -189,10 +187,11 @@
    "label": "Application Status"
   },
   {
+   "default": "Draft",
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Draft\nAwaiting For Approval\nApproved\nRejected"
+   "options": "Draft\nPending Review\nPending Approval\nApproved\nRejected"
   },
   {
    "fieldname": "educational_details_section",
@@ -209,7 +208,8 @@
    "fieldname": "last_grade",
    "fieldtype": "Data",
    "label": "Last Grade",
-   "options": "Program"
+   "options": "Program",
+   "reqd": 1
   },
   {
    "fieldname": "overall_percentage",
@@ -226,14 +226,13 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "joinning_grade",
-   "fieldtype": "Link",
-   "label": "Joinning Grade",
-   "options": "Program"
-  },
-  {
    "fieldname": "section_break_x6jq",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
   },
   {
    "fieldname": "amended_from",
@@ -244,13 +243,27 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "depends_on": "eval:doc.sibilings==\"Yes\"",
+   "fieldname": "sibiling_name",
+   "fieldtype": "Data",
+   "label": "Sibiling Name"
+  },
+  {
+   "fieldname": "joining_grade",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Joining Grade",
+   "options": "Program",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-03-31 00:36:20.369414",
+ "modified": "2026-04-05 22:00:13.143602",
  "modified_by": "Administrator",
  "module": "Admissions & Student Lifecycle",
  "name": "Admission Application",

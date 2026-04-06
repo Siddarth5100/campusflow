@@ -76,7 +76,7 @@
    "fieldtype": "Section Break"
   },
   {
-   "fetch_from": "student_name.joinning_grade",
+   "fetch_from": "student_name.joining_grade",
    "fieldname": "program",
    "fieldtype": "Link",
    "in_list_view": 1,
