@@ -21,3 +21,15 @@ def send_admission_status(docname):
             subject="School Admission Application Status",
             message=f"Hello, {admission_app.father_name} your son/daughter {admission_app.student_name}'s School Admission status = {admission_app.status}"
         )
+
+# scheduler job
+def admission_application_status():
+    admission_application = frappe.get_all(
+        "Admission Application",
+        fields=['status', 'email'],
+        filters={'status': 'Pending Approval'}
+    )
+
+    count = len(admission_application)
+
+    return count

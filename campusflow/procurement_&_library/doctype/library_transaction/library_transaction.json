@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "LIB-.DD.-.MM.-.YY.-.####",
  "creation": "2026-03-31 02:36:52.315186",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -54,6 +55,7 @@
    "search_index": 1
   },
   {
+   "depends_on": "eval doc.transaction_type == \"Return\";",
    "fieldname": "return_date",
    "fieldtype": "Date",
    "label": "Return Date"
@@ -63,10 +65,11 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-04-02 17:52:36.987440",
+ "modified": "2026-04-06 23:01:24.943855",
  "modified_by": "Administrator",
  "module": "Procurement & Library",
  "name": "Library Transaction",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

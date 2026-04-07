@@ -143,6 +143,11 @@ fixtures = [
 # 	"Event": "frappe.desk.doctype.event.event.has_permission",
 # }
 
+has_permission = {
+	"Admission Application": "campusflow.api.admission_has_permission"
+}
+
+
 # DocType Class
 # ---------------
 # Override standard doctype classes
@@ -183,6 +188,12 @@ fixtures = [
 # 		"campusflow.tasks.monthly"
 # 	],
 # }
+
+scheduler_events = {
+	"daily": [
+		"campusflow.utils.admission_application_status"
+	]
+}
 
 # Testing
 # -------

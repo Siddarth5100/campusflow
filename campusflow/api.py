@@ -41,3 +41,9 @@ def get_fee_structure_details(name):
         })
 
     return fees
+
+# permission check
+def admission_has_permission(doc, ptype, user):
+	if ptype == "read":
+		return doc.owner == user
+	return True

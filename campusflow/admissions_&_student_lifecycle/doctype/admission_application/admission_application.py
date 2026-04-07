@@ -7,9 +7,6 @@ from frappe.model.document import Document
 
 class AdmissionApplication(Document):
 	def validate(self):
-		# frappe.msgprint("Validate running")
-		# print("____________Test validate")
-
 		# mobile num validation, father field
 		if self.father_number:
 			if len(self.father_number) != 10:
@@ -49,3 +46,4 @@ class AdmissionApplication(Document):
 				docname=self.name,
 				queue="short"
 			)
+			

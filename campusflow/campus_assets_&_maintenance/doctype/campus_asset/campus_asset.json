@@ -6,8 +6,9 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "asset_name",
   "asset_type",
+  "asset_name",
+  "serial_number",
   "location",
   "status"
  ],
@@ -29,20 +30,27 @@
   },
   {
    "fieldname": "location",
-   "fieldtype": "Data",
-   "label": "Location"
+   "fieldtype": "Select",
+   "label": "Location",
+   "options": "Building 1A\nBuilding 1B"
   },
   {
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
    "options": "Active\nUnder Maintenance\nDamaged"
+  },
+  {
+   "depends_on": "eval: doc.asset_type==\"Laptop\";",
+   "fieldname": "serial_number",
+   "fieldtype": "Data",
+   "label": "Serial Number"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-31 13:24:38.074689",
+ "modified": "2026-04-06 23:14:03.928055",
  "modified_by": "Administrator",
  "module": "Campus Assets & Maintenance",
  "name": "Campus Asset",

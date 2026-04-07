@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:student_name",
  "creation": "2026-03-30 17:33:27.227713",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -9,6 +10,7 @@
   "grade",
   "payment_date",
   "payment_breakdown",
+  "total_amount",
   "amended_from"
  ],
  "fields": [
@@ -16,7 +18,8 @@
    "fieldname": "student_name",
    "fieldtype": "Link",
    "label": "Student Name",
-   "options": "Student"
+   "options": "Student",
+   "unique": 1
   },
   {
    "fieldname": "payment_date",
@@ -37,11 +40,18 @@
    "read_only": 1
   },
   {
+   "fieldname": "total_amount",
+   "fieldtype": "Int",
+   "label": "Total Amount Paid",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "Fee Payment",
+   "options": "Fee Structure",
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
@@ -51,25 +61,13 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-03-31 13:12:48.242678",
+ "modified": "2026-04-07 15:10:06.403857",
  "modified_by": "Administrator",
  "module": "Fees & Finance",
  "name": "Fee Payment",
+ "naming_rule": "Expression",
  "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
+ "permissions": [],
  "quick_entry": 1,
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
