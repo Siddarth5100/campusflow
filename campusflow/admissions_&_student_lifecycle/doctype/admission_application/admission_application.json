@@ -87,7 +87,8 @@
    "fieldname": "admission_type",
    "fieldtype": "Select",
    "label": "Admission Type",
-   "options": "Day Scholar\nBoarder"
+   "options": "Day Scholar\nBoarder",
+   "reqd": 1
   },
   {
    "fieldname": "student_name",
@@ -110,17 +111,20 @@
   {
    "fieldname": "father_name",
    "fieldtype": "Data",
-   "label": "Father Name"
+   "label": "Father Name",
+   "reqd": 1
   },
   {
    "fieldname": "mother_name",
    "fieldtype": "Data",
-   "label": "Mother Name"
+   "label": "Mother Name",
+   "reqd": 1
   },
   {
    "fieldname": "father_number",
    "fieldtype": "Data",
-   "label": "Father Number"
+   "label": "Father Number",
+   "reqd": 1
   },
   {
    "fieldname": "mother_number",
@@ -232,7 +236,8 @@
   {
    "fieldname": "email",
    "fieldtype": "Data",
-   "label": "Email"
+   "label": "Email",
+   "reqd": 1
   },
   {
    "fieldname": "amended_from",
@@ -263,7 +268,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-04-05 22:00:13.143602",
+ "modified": "2026-04-07 03:12:23.245163",
  "modified_by": "Administrator",
  "module": "Admissions & Student Lifecycle",
  "name": "Admission Application",

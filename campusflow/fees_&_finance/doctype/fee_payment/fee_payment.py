@@ -6,4 +6,12 @@ from frappe.model.document import Document
 
 
 class FeePayment(Document):
-	pass
+	def validate(self):
+		total = 0
+
+		for row in self.payment_breakdown:
+			total += row.amount
+
+		self.total_amount = total
+
+	

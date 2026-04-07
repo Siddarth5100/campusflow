@@ -1,55 +1,74 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2026-03-30 16:59:30.120474",
+ "autoname": "FEEDBACK.-.####",
+ "creation": "2026-04-07 09:00:37.530275",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "school_name",
+  "parent_name",
   "email",
   "phone_number",
-  "school_address"
+  "section_break_cmvi",
+  "type",
+  "message"
  ],
  "fields": [
   {
-   "fieldname": "school_name",
+   "fieldname": "parent_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "School Name",
+   "label": "Parent Name",
    "reqd": 1
   },
   {
    "fieldname": "email",
    "fieldtype": "Data",
-   "label": "Email"
+   "in_list_view": 1,
+   "label": "Email",
+   "reqd": 1
   },
   {
    "fieldname": "phone_number",
    "fieldtype": "Data",
-   "label": "Phone Number"
+   "in_list_view": 1,
+   "label": "Phone Number",
+   "reqd": 1
   },
   {
-   "fieldname": "school_address",
+   "fieldname": "section_break_cmvi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Query\nFeedback"
+  },
+  {
+   "fieldname": "message",
    "fieldtype": "Small Text",
-   "label": "School Address"
+   "label": "Message"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "issingle": 1,
  "links": [],
- "modified": "2026-04-06 22:09:20.098856",
+ "modified": "2026-04-07 12:38:56.716917",
  "modified_by": "Administrator",
  "module": "Admissions & Student Lifecycle",
- "name": "CampusFlow Settings",
+ "name": "Parent Feedback",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
    "create": 1,
    "delete": 1,
    "email": 1,
+   "export": 1,
    "print": 1,
    "read": 1,
+   "report": 1,
    "role": "System Manager",
    "share": 1,
    "write": 1
@@ -59,6 +78,5 @@
  "rows_threshold_for_grid_search": 20,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "track_changes": 1
+ "states": []
 }

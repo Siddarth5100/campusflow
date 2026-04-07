@@ -5,13 +5,5 @@
 from frappe.model.document import Document
 
 
-class Evaluation(Document):
-	def validate(self):
-		total = 0
-
-		for score in self.evaluation_criteria:
-			total += score.score
-
-		self.total_marks = total
-
-	
+class ParentFeedback(Document):
+	pass
